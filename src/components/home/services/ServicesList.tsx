@@ -3,7 +3,7 @@ import ServicesListItem from "./ServicesListItem";
 
 const ServicesList = () => {
 	return (
-		<div className="grid gap-2 lg:grid-cols-2">
+		<div className="grid gap-5 lg:grid-cols-2">
 			<ServicesListItem
 				title="Desarrollo web"
 				content={[

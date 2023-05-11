@@ -23,8 +23,9 @@ const Newsletter = () => {
 				<input
 					type="text"
 					className="min-w-[85%] max-w-[90%] py-1 px-2 text-blue-950 outline-none rounded-md"
+					placeholder="tucorreo@mail.com"
 				/>
-				<button className="min-w-[10%] py-1">
+				<button className="min-w-[10%] py-1 flex items-center">
 					<BiSend className="w-5 h-5" />
 				</button>
 			</form>

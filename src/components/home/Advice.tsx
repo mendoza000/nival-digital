@@ -10,7 +10,7 @@ const Advice = () => {
 				Puedes contactarnos para realizar una asesoria sobre tu negoció y asi
 				darte un servicio que se adapte a sus necesidades
 			</p>
-			<button className="max-w-sm px-10 py-3 font-semibold text-orange-500 uppercase duration-200 bg-white shadow-xl hover:opacity-90">
+			<button className="max-w-sm px-10 py-4 font-semibold text-orange-500 uppercase duration-200 bg-white shadow-xl hover:opacity-90 rounded-xl">
 				Solicitar asesoria
 			</button>
 		</div>
