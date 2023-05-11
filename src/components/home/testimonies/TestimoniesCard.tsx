@@ -15,7 +15,7 @@ const TestimoniesCard = () => {
       </div>
 
       <h3 className="mt-5 text-2xl font-semibold opacity-80">
-        [Nombre empresa]
+        [ Nombre empresa ]
       </h3>
       <p className="max-w-xs mt-5 text-center opacity-75">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quam
