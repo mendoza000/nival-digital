@@ -18,12 +18,12 @@ const NavbarItem = (props: Props) => {
 					{props.text}
 				</Link>
 			) : (
-				<a
-					href={props.url}
+				<Link
 					className="px-4 py-2 font-semibold duration-200 hover:text-blue-50 hover:bg-orange-500 rounded-xl"
+					href={"/" + props.url}
 				>
 					{props.text}
-				</a>
+				</Link>
 			)}
 		</li>
 	);
