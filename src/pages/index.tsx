@@ -13,8 +13,10 @@ export default function Home() {
 		<>
 			<Header />
 			<Metrics />
-			<About />
-			<Services />
+			<div className="bg-gradient-to-tr from-blue-200 via-blue-50 to-orange-100">
+				<About />
+				<Services />
+			</div>
 			<Advice />
 			<Testimonies />
 		</>

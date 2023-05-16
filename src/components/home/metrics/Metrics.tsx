@@ -5,7 +5,7 @@ import MetricsCard from "./MetricsCard";
 
 const Metrics = () => {
 	return (
-		<div className="flex flex-wrap items-center justify-center gap-10 px-10 py-20 bg-orange-500 lg:px-40">
+		<div className="flex flex-wrap items-center justify-center gap-10 px-10 py-20 bg-orange-500 shadow-xl lg:px-40 shadow-blue-200">
 			<MetricsCard
 				title="clientes"
 				count={80}

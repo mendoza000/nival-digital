@@ -2,7 +2,7 @@ import React from "react";
 
 const Advice = () => {
 	return (
-		<div className="flex flex-col items-center justify-center min-w-full gap-5 px-10 py-20 text-white bg-orange-500 lg:px-40">
+		<div className="flex flex-col items-center justify-center min-w-full gap-5 px-10 py-20 text-white bg-orange-500 shadow-xl lg:px-40 shadow-blue-200">
 			<h3 className="text-3xl font-bold text-center">
 				¿Necesitas algo mas personalizado?
 			</h3>

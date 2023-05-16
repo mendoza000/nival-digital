@@ -15,10 +15,10 @@ const Header = () => {
 	const textsAreas = ["Empresa", "Marca", "Negocio"];
 
 	return (
-		<header className="flex flex-col-reverse items-center min-h-screen gap-10 px-10 py-20 lg:grid lg:py-0 lg:grid-cols-2 lg:px-40 bg-blue-50">
+		<header className="flex flex-col-reverse items-center min-h-screen gap-10 px-10 py-20 lg:grid lg:py-0 lg:grid-cols-2 lg:px-40 bg-gradient-to-tr from-blue-200 via-blue-50 to-orange-100">
 			{/* <div className="absolute z-0 bottom-5 right-5 min-w-[30rem] min-h-[7rem] bg-orange-300 blur-[12rem]"></div> */}
 			<div className="flex flex-col -mt-20 gap-7 lg:mt-0">
-				<span className="max-w-[13rem] text-sm font-semibold opacity-70 uppercase bg-orange-400">
+				<span className="max-w-[13rem] text-sm font-semibold bg-opacity-70 uppercase bg-orange-400 text-center ">
 					Construyendo tu futuro
 				</span>
 				<h1 className="text-4xl font-extrabold tracking-wider uppercase">
