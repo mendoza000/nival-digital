@@ -16,8 +16,8 @@ const Navbar = () => {
 					<Image
 						src={"/nival-logo.png"}
 						alt="nival-logo"
-						width={80}
-						height={80}
+						width={84}
+						height={84}
 					/>
 				</Link>
 
