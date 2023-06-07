@@ -12,6 +12,7 @@ const ServicesList = () => {
 					"Optimización de tu sitio web y corrección de errores",
 					"Diseño web",
 				]}
+				img="/dev-icon.svg"
 			/>
 
 			<ServicesListItem
@@ -22,6 +23,7 @@ const ServicesList = () => {
 					"Campañas publicitarias",
 					"Identidad visual y corporativa",
 				]}
+				img="/desing-icon.svg"
 			/>
 
 			<ServicesListItem
@@ -32,6 +34,7 @@ const ServicesList = () => {
 					"Gestion de campañas publicitarias",
 					"Gestion de redes sociales",
 				]}
+				img="/comunnity-icon.svg"
 			/>
 
 			<ServicesListItem
@@ -42,6 +45,7 @@ const ServicesList = () => {
 					"Análisis de datos de marketing",
 					"Análisis de datos de rendimiento del sitio web",
 				]}
+				img="/science-icon.svg"
 			/>
 		</div>
 	);

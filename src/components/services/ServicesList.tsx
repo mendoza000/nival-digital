@@ -1,52 +1,59 @@
 import React from "react";
-import ServicesListItem from "./ServicesListItem";
+import ServicesDepartment from "./ServicesDepartment";
 
 const ServicesList = () => {
 	return (
-		<div className="flex flex-wrap gap-10 cursor-default mt-7">
-			<ServicesListItem
-				name="inicio"
-				content={[
-					"Diseño de marca",
-					"Diseño de feeds para redes",
-					"Asesoria para redes sociales",
-					"Campaña publicitaria",
+		<div className="flex flex-col gap-20 px-10 cursor-default mt-7 lg:px-40">
+			<ServicesDepartment
+				name="Programación"
+				services={[
+					"Desarrollo de sitios web personalizados",
+					"Desarrollo de tienda en linea",
+					"Diseño web",
+					"Sistema de inventario",
+					"Mantenimiento para pagina web",
+					"Optimización de sitio web",
+					"Sistemas de gestión de contenido (CMS)",
+					"Desarrollo de blogs",
+					"Desarrollo de landing pages",
+					"Implementacion de bases de datos",
 				]}
-				price={129.99}
-				text="Ideal para pequeños negocios que necesitan destacar entre otras marcas y hacer presencia en redes"
-				url={
-					"https://api.whatsapp.com/send?phone=584121264718&text=Hola!%20Estoy%20interesad%40%20en%20el%20plan%20INICIO%20DIGITAL%20para%20mi%20negocio%20%F0%9F%91%8B"
-				}
 			/>
-			<ServicesListItem
-				name="ascenso"
-				content={[
-					"Diseño de marca",
-					"Diseño de feeds para redes",
-					"Asesoria para redes sociales",
-					"Campaña publicitaria",
-					"Creacion de sitio web o tienda virtual",
+			<ServicesDepartment
+				name="Diseño grafico"
+				services={[
+					"Diseño de logotipos y branding corporativo",
+					"Diseño de material promocional y publicitario",
+					"Diseño de banners y anuncios digitales",
+					"Diseño de presentaciones y materiales de marketing",
+					"Diseño de folletos, catálogos y material impreso",
+					"Diseño de packaging y etiquetas",
+					"Creación de ilustraciones y personajes personalizados",
 				]}
-				price={279.99}
-				text="La mejor opcion para negocios medianos que quieren renovar su imagen y automatizar sus ventas"
-				url={
-					"https://api.whatsapp.com/send?phone=584121264718&text=Hola!%20Estoy%20interesad%40%20en%20el%20plan%20ASCENSO%20DIGITAL%20para%20mi%20negocio%20%F0%9F%91%8B"
-				}
 			/>
-			<ServicesListItem
-				name="élite"
-				content={[
-					"Diseño de marca",
-					"Diseño de feeds para redes",
-					"Asesoria para redes sociales",
-					"Campaña publicitaria",
-					"Creacion de sitio web o tienda virtual",
-					"Automatizacion den sistema de ventas",
-					"Automatizacion de inventario",
+			<ServicesDepartment
+				name="Comunnity Manager"
+				services={[
+					"Gestion de contenido para redes",
+					"Estrategias de marketing en redes sociales",
+					"Interacción y atención al cliente en redes sociales",
+					"Creación y gestión de campañas publicitarias en redes sociales",
+					"Gestión de influenciadores y colaboraciones",
+					"Estrategias de crecimiento y aumento de seguidores en redes sociales",
+					"Gestión de reputación en línea y manejo de crisis",
 				]}
-				price={459.99}
-				text="Perfecto para negocios que ya tienen trayectoria y necesitan trabajar para seguir creciendo como marca"
-				url="https://api.whatsapp.com/send?phone=584121264718&text=Hola!%20Estoy%20interesad%40%20en%20el%20plan%20ELITE%20DIGITAL%20para%20mi%20negocio%20%F0%9F%91%8B"
+			/>
+			<ServicesDepartment
+				name="Ciencia de datos"
+				services={[
+					"Modelado y predicción de comportamientos",
+					"Minería de datos y descubrimiento de patrones",
+					"Análisis de sentimientos y opiniones en línea",
+					"Visualización de datos y dashboards interactivos",
+					"Análisis de competidores y mercado",
+					"Automatización de informes y procesos analíticos",
+					"Consultoría y asesoramiento en estrategias basadas en datos",
+				]}
 			/>
 		</div>
 	);
