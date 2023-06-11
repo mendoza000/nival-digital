@@ -28,7 +28,7 @@ const Redes = () => {
 				</a>
 
 				<a
-					href="mailto:analisi_datos@nivaldigital.com"
+					href="mailto:contacto@nivaldigital.com"
 					className="flex items-center gap-1 duration-200 opacity-70 hover:opacity-100"
 					target="_blank"
 				>
@@ -37,7 +37,7 @@ const Redes = () => {
 				</a>
 
 				<a
-					href="https://wa.me/+584121264718yar"
+					href="https://wa.me/+584121264718"
 					className="flex items-center gap-1 duration-200 opacity-70 hover:opacity-100"
 					target="_blank"
 				>
