@@ -2,14 +2,16 @@ import React from "react";
 import ServicesDepartmentItem from "./ServicesDepartmentItem";
 import { useConfigStore } from "@/store/config";
 import { shallow } from "zustand/shallow";
+import { useServicesStore } from "@/store/services";
 
 interface Props {
 	name: string;
 	services: string[];
+	// servicesList: string[];
 }
 
 const ServicesDepartment = (props: Props) => {
-	const { servicesList } = useConfigStore((state) => state, shallow);
+	const servicesList = useServicesStore((state) => state.servicesList);
 
 	return (
 		<div className="flex flex-col gap-10">

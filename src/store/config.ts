@@ -4,9 +4,8 @@ interface State {
   openNav: boolean;
   changeOpenNav: () => void;
   servicesList: string[];
-  selectService: (service: string) => void;
-  deselectService: (service: string) => void;
   cleanService: () => void;
+  selectService: (title: string) => void
 }
 
 export const useConfigStore = create<State>((set, get) => ({
@@ -21,26 +20,30 @@ export const useConfigStore = create<State>((set, get) => ({
   },
 
   servicesList: [],
-  selectService(service) {
-    const {servicesList} = get()
-    const tempServiceList = servicesList
 
+  selectService(title) {
+    let tempServicesList = get().servicesList
 
-    tempServiceList.push(service)
-     set(state => ({
-      ...state,
-      servicesList: tempServiceList
-    }))
-  },
-  deselectService(service) {
-    const {servicesList} = get()
-    const tempServiceList = servicesList.filter(s => s !== service)
+    if (!tempServicesList.includes(title)){
+      tempServicesList.push(title)
+      set(state => ({
+        ...state,
+        servicesList: tempServicesList,
+      }))
+      console.log(get().servicesList)
+      return
+    }
 
+    tempServicesList = tempServicesList.filter(s => s !== title)
     set(state => ({
-      ...state,
-      servicesList: tempServiceList
+      ...state, 
+      servicesList: tempServicesList,
     }))
+    console.log(get().servicesList)
+
+    return 
   },
+  
   cleanService() {
     set(state => ({
       ...state,

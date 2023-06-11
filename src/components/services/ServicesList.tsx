@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import ServicesDepartment from "./ServicesDepartment";
+import { useConfigStore } from "@/store/config";
+import { shallow } from "zustand/shallow";
 
 const ServicesList = () => {
+	const servicesList = useConfigStore((state) => state.servicesList);
+
 	return (
 		<div className="flex flex-col gap-20 px-10 cursor-default mt-7 lg:px-40">
 			<ServicesDepartment
 				name="Programación"
+				servicesList={servicesList}
 				services={[
 					"Desarrollo de sitios web personalizados",
 					"Desarrollo de tienda en linea",
@@ -21,6 +26,7 @@ const ServicesList = () => {
 			/>
 			<ServicesDepartment
 				name="Diseño grafico"
+				servicesList={servicesList}
 				services={[
 					"Diseño de logotipos y branding corporativo",
 					"Diseño de material promocional y publicitario",
@@ -33,6 +39,7 @@ const ServicesList = () => {
 			/>
 			<ServicesDepartment
 				name="Comunnity Manager"
+				servicesList={servicesList}
 				services={[
 					"Gestion de contenido para redes",
 					"Estrategias de marketing en redes sociales",
@@ -45,6 +52,7 @@ const ServicesList = () => {
 			/>
 			<ServicesDepartment
 				name="Ciencia de datos"
+				servicesList={servicesList}
 				services={[
 					"Modelado y predicción de comportamientos",
 					"Minería de datos y descubrimiento de patrones",
