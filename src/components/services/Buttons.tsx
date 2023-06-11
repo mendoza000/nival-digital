@@ -5,7 +5,7 @@ import { shallow } from "zustand/shallow";
 
 const Buttons = () => {
 	const servicesList = useServicesStore((state) => state.servicesList);
-	const cleanServices = useConfigStore((state) => state.cleanService);
+	const cleanServices = useServicesStore((state) => state.cleanServices);
 
 	const handleClean = () => cleanServices();
 

@@ -4,6 +4,7 @@ interface InitialState {
   servicesList: string[];
   selectService: (title: string) => void;
   deselectService: (title: string) => void;
+  cleanServices: () => void;
 }
 
 export const useServicesStore = create<InitialState>((set, get) => ({
@@ -17,7 +18,7 @@ export const useServicesStore = create<InitialState>((set, get) => ({
       servicesList: [...tempServicesList]
     }))
 
-    console.log(get().servicesList)
+    // console.log(get().servicesList)
 
   },
   deselectService(title) {
@@ -26,7 +27,13 @@ export const useServicesStore = create<InitialState>((set, get) => ({
       ...state,
       servicesList: [...tempServicesList]
     }))
-    console.log(get().servicesList)
+    // console.log(get().servicesList)
 
+  },
+  cleanServices() {
+    set(state => ({
+      ...state,
+      servicesList: []
+    }))
   },
 }))
